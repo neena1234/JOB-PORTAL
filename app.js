@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var userRouter = require('./routes/user');
+var userRouter = require('./routes/index');
 var adminRouter = require('./routes/admin');
 var hbs=require('express-handlebars')
 var app = express();
@@ -29,25 +29,13 @@ db.connect((err)=>{
   console.log("Database connected");
 })
 
-app.use('/', userRouter);
-app.use('/admin', adminRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
 app.use('/',userRouter);
-
-app.use('/', userRouter);
-app.use('/admin', adminRouter);
-
-db.connect((err)=>{
-  if(err)
-  console.log("Connection error"+err);
-  else
-  console.log("Database connected");
-})
-app.use('/', userRouter);
 app.use('/admin', adminRouter);
 
 
@@ -58,7 +46,8 @@ app.use('/admin', adminRouter);
 
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function(req, res, next)
+{
   next(createError(404));
 });
 
