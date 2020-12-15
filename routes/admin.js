@@ -8,7 +8,7 @@ var MongoClient=require('mongodb').MongoClient
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.render('index')
+  res.render('admin/login')
 });
 
 module.exports = router;
