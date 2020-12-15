@@ -4,7 +4,30 @@ const userHelper = require('../helpers/user-helpers')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+    let jobs = [
+        {
+            title:"FRONTEND DEVELOPMENT ",
+            company: "Tata Consultancies Services",
+            vacancies: "450 vacancies"
+        },
+        {
+            title:"FRONTEND DEVELOPMENT ",
+            company: "Tata Consultancies Services",
+            vacancies: "450 vacancies"
+        },
+        {
+            title:"FRONTEND DEVELOPMENT ",
+            company: "Tata Consultancies Services",
+            vacancies: "450 vacancies"
+        },
+        {
+            title:"FRONTEND DEVELOPMENT ",
+            company: "Tata Consultancies Services",
+            vacancies: "450 vacancies"
+        }
+    ]
+
+    res.render('index',{jobs,admin:false});
 });
 
 
