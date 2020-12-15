@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./bin/www"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
@@ -19,5 +19,8 @@
     "mongodb": "^3.6.3",
     "morgan": "~1.9.1",
     "nodemon": "^2.0.6"
+  },
+  "devDependencies": {
+    "express-session": "^1.17.1"
   }
 }

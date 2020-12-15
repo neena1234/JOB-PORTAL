@@ -2,13 +2,26 @@ var express = require('express');
 var router = express.Router();
 
 var express = require('express');
-const { render } = require('../app');
+const {render} = require('../app');
+var jobHelper = require('../helpers/job-helpers');
 
-var MongoClient=require('mongodb').MongoClient
+var MongoClient = require('mongodb').MongoClient
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.render('admin/view-jobs',{admin:true})
+/* GET user listing. */
+router.get('/', function (req, res, next) {
+    jobHelper.getAllJobs().then((jobs) => {
+        res.render('admin/view-jobs', {jobs: jobs, admin: true})
+    })
 });
+
+router.get('/add-job', function (req, res) {
+    res.render('admin/add-job')
+});
+
+router.post('/add-jobs', ((req, res) => {
+    jobHelper.addJobs(req.body, (result) => {
+        res.render('admin/add-job')
+    })
+}))
 
 module.exports = router;

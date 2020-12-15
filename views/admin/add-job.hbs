@@ -1,0 +1,24 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-3">
+                <h2 class="text-center">Post New Job</h2>
+                <form action="/admin/add-jobs" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" class="form-control" id="title">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" name="company" class="form-control" id="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="vacancies">Vacancies</label>
+                        <input type="text" name="vacancies" class="form-control" id="vacancies">
+                    </div>
+                    <button type="submit" class="btn btn-success mt-4">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

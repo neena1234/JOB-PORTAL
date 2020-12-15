@@ -1,6 +1,9 @@
 <section>
    <div class="container">
-       <table class="table">
+       <div class="row mt-4">
+           <a href="/admin/add-job" class="btn btn-success ml-auto">Post New Job</a>
+        </div>
+       <table class="table mt-5">
            <thead>
            <tr>
                <th scope="col">#</th>
@@ -10,13 +13,14 @@
            </tr>
            </thead>
            <tbody>
+           {{#each jobs}}
            <tr>
                <th scope="row">1</th>
-               <td>Mark</td>
-               <td>Otto</td>
-               <td>@mdo</td>
+               <td>{{this.title}}</td>
+               <td>{{this.company}}</td>
+               <td>{{this.vacancies}}</td>
            </tr>
-
+            {{/each}}
            </tbody>
        </table>
    </div>
