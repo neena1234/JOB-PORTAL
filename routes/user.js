@@ -50,4 +50,8 @@ router.get('/logout', (req, res) => {
     res.redirect('/')
 })
 
+router.get('/apply',function(req,res){
+res.render('/user/apply')    
+})
+
 module.exports = router;
