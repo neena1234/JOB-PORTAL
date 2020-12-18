@@ -7,6 +7,7 @@ var logger = require('morgan');
 var userRouter = require('./routes/user');
 var adminRouter = require('./routes/admin');
 var employersRouter = require('./routes/employers');
+var homeRouter = require('./routes/home');
 var hbs = require('express-handlebars')
 var app = express();
 var fileUpload = require('express-fileupload')
@@ -37,7 +38,7 @@ db.connect((err) => {
         console.log("Database connected to port 27017");
 })
 
-
+app.use('',homeRouter);
 app.use('/user', userRouter);
 app.use('/admin', adminRouter);
 app.use('/employers', employersRouter);
