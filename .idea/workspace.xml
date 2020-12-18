@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b68e52f-cd1f-4685-859a-0f482bbde8f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/helpers/account-helpers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/add-job.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/user/view-jobs.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/collections.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/collections.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/user-helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/job-helpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/view-jobs.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/view-jobs.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/user-header.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/user-header.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/users/login.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/user/login.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/users/signup.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/user/signup.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +58,8 @@
       <workItem from="1608001771878" duration="994000" />
       <workItem from="1608047173940" duration="3661000" />
       <workItem from="1608050906149" duration="1287000" />
-      <workItem from="1608055779314" duration="3195000" />
+      <workItem from="1608055779314" duration="3492000" />
+      <workItem from="1608308534590" duration="403000" />
     </task>
     <servers />
   </component>

@@ -51,7 +51,7 @@ router.get('/logout', (req, res) => {
 })
 
 router.get('/apply',function(req,res){
-res.render('/user/apply')    
+res.render('user/apply')
 })
 
 module.exports = router;
