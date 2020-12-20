@@ -15,7 +15,16 @@
                     <label>Password</label>
                     <input type="password" class="form-control" name="Password" placeholder="Enter Password">
                 </div>
-                <a href="login">Alredy have account ?</a>
+                <div class="form-group">
+                    <label>Choose your Role</label>
+                    <select class="form-control" aria-label="Select your role" name="role">
+                        <option selected>Choose Your Role</option>
+                        <option value="user">Job Seeker</option>
+                        <option value="employer">Employer</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <a href="login">Already have account ?</a>
                 <button type="submit" class="btn btn-primary float-right">Signup</button>
             </form>
         </div>

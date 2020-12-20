@@ -14,6 +14,11 @@ router.get('/', function (req, res, next) {
     })
 });
 
+router.get('/admin-dashboard',function (req,res){
+    res.render('admin/admin-dashboard')
+})
+
+
 router.get('/add-job', function (req, res) {
     res.render('admin/add-job')
 });

@@ -14,6 +14,11 @@ router.get('/', function (req, res, next) {
     })
 });
 
+router.get('/employers-dashboard',function (req,res){
+    res.render('employers/employers-dashboard')
+})
+
+
 router.get('', function (req, res) {
     res.render('')
 });

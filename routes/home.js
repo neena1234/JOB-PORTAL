@@ -16,8 +16,14 @@ router.get('/about', function (req, res, next) {
 router.get('/services', function (req, res, next) {
     res.render('home/services')
 });
+
+router.get('/jobs', function (req,res,next){
+    res.render('home/all-jobs')
+})
+
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
+        console.log(req.session.user)
         res.redirect('/')
     } else {
         res.render('home/login', {"loginErr": req.session.loginErr})
@@ -32,7 +38,7 @@ router.get('/signup', (req, res) => {
 router.post('/signup', (req, res) => {
     userHelper.doSignup(req.body).then((response) => {
         req.session.loggedIn = true
-        req.session.user = response
+        req.session.user = response.user
         res.redirect('/')
     })
 })
@@ -40,9 +46,19 @@ router.post('/signup', (req, res) => {
 router.post('/login', (req, res) => {
     userHelper.doLogin(req.body).then((response) => {
         if (response.status) {
+            console.log(response.user)
             req.session.loggedIn = true
             req.session.user = response.user
-            res.redirect('/user')
+            if(response.user.role === 'admin') {
+                res.redirect('admin/admin-dashboard')
+            }else if(response.user.role === 'employer'){
+                res.redirect('employers/employers-dashboard')
+            }else if (response.user.role === 'user'){
+                res.redirect('/user')
+            }else{
+                req.session.loginErr = "Please Contact Admin"
+                res.redirect('/login')
+            }
         } else {
             req.session.loginErr = "Invalid username or password"
             res.redirect('/login')
@@ -54,4 +70,5 @@ router.get('/logout', (req, res) => {
     req.session.destroy()
     res.redirect('/')
 })
+
 module.exports = router;
