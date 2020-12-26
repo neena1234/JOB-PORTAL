@@ -6,7 +6,8 @@ var jobHelper = require('../helpers/job-helpers');
 /* GET home page. */
 router.get('/', function (req, res, next) {
     console.log(req.session.user)
-    res.render('user/user-dashboard')
+    let user = req.session.user
+    res.render('user/user-dashboard',{user,admin:false,employer:false,applicant:true,home:false})
 });
 
 router.get('/user-view-jobs',function (req,res){

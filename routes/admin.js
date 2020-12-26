@@ -10,12 +10,13 @@ var MongoClient = require('mongodb').MongoClient
 /* GET user listing. */
 router.get('/', function (req, res, next) {
     jobHelper.getAllJobs().then((jobs) => {
-        res.render('admin/view-jobs', {jobs: jobs, admin: true})
+        res.render('admin/view-jobs', {jobs: jobs})
     })
 });
 
 router.get('/admin-dashboard',function (req,res){
-    res.render('admin/admin-dashboard')
+    let user = req.session.user
+    res.render('admin/admin-dashboard',{user,admin:true,employer:false,applicant:false,home:false})
 })
 
 

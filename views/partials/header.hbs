@@ -8,6 +8,67 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                {{#if admin}}
+                    <li class="nav-item active">
+                        <a class="nav-link" href=""> {{user.Name}}</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Manage User</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Manage Employers</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Manage Job Posts</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">{{user.role}} | Dashboard</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
+                {{/if}}
+                {{#if employer}}
+                    <li class="nav-item active">
+                        <a class="nav-link" href=""> {{user.Name}}</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Profile</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Your Jobs</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">All Jobs</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">{{user.role}} | Dashboard</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
+                {{/if}}
+                {{#if applicant}}
+                    <li class="nav-item active">
+                        <a class="nav-link" href=""> {{user.Name}}</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Profile</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Your Jobs</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">All Jobs</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">{{user.role}} | Dashboard</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
+                {{/if}}
+                {{#if home}}
                 <li class="nav-item active">
                     <a class="nav-link" href="services">Our Services</a>
                 </li>
@@ -20,22 +81,9 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="jobs">All Jobs</a>
                 </li>
-                {{#if user}}
-                    <li class="nav-item active">
-                        <a class="nav-link" href=""> {{user.Name}}</a>
-                    </li>
-                {{/if}}
-                {{#if user}}
-                    <li class="nav-item active">
-                        <a class="nav-link" href="">{{user.role}} | Dashboard</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/logout">Logout</a>
-                    </li>
-                {{else}}
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/login">Login</a>
-                    </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
                 {{/if}}
             </ul>
         </div>

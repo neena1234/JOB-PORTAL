@@ -15,7 +15,8 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/employers-dashboard',function (req,res){
-    res.render('employers/employers-dashboard')
+    let user = req.session.user
+    res.render('employers/employers-dashboard',{user,admin:false,employer:true,applicant:false,home:false})
 })
 
 

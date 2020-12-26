@@ -4,21 +4,21 @@ var userHelper = require('../helpers/account-helpers');
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    res.render('index')
+    res.render('index',{admin:false,employer:false,applicant:false,home:true})
 });
 
 router.get('/contact', function (req, res, next) {
-    res.render('home/contact')
+    res.render('home/contact',{admin:false,employer:false,applicant:false,home:true})
 });
 router.get('/about', function (req, res, next) {
-    res.render('home/about')
+    res.render('home/about',{admin:false,employer:false,applicant:false,home:true})
 });
 router.get('/services', function (req, res, next) {
-    res.render('home/services')
+    res.render('home/services',{admin:false,employer:false,applicant:false,home:true})
 });
 
 router.get('/jobs', function (req,res,next){
-    res.render('home/all-jobs')
+    res.render('home/all-jobs',{admin:false,employer:false,applicant:false,home:true})
 })
 
 router.get('/login', (req, res) => {
@@ -52,8 +52,10 @@ router.post('/login', (req, res) => {
             if(response.user.role === 'admin') {
                 res.redirect('admin/admin-dashboard')
             }else if(response.user.role === 'employer'){
+                let user = req.session.user
                 res.redirect('employers/employers-dashboard')
             }else if (response.user.role === 'user'){
+                let user = req.session.user
                 res.redirect('/user')
             }else{
                 req.session.loginErr = "Please Contact Admin"

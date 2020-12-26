@@ -2,29 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b68e52f-cd1f-4685-859a-0f482bbde8f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/admin/admin-dashboard.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/all-jobs.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/view-all-employers.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/admin/view-all-users.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/employers/employers-dashboard.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/employers/view-applicants.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/home/all-jobs.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/partials/header.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/user/job-status.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/user/user-dashboard.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/employers.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/employers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/employers/add-job.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/employers/add-job.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/employers/view-jobs.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/employers/view-jobs.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home/signup.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home/signup.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layouts/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/layout.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/admin-header.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/employers-header.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/user-header.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/user-header.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/header.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +66,11 @@
       <workItem from="1608055779314" duration="3492000" />
       <workItem from="1608308534590" duration="1231000" />
       <workItem from="1608314240954" duration="1246000" />
-      <workItem from="1608465635547" duration="4207000" />
+      <workItem from="1608465635547" duration="4354000" />
+      <workItem from="1608662827326" duration="265000" />
+      <workItem from="1608888617287" duration="14000" />
+      <workItem from="1608889499347" duration="701000" />
+      <workItem from="1608949268715" duration="1064000" />
     </task>
     <servers />
   </component>
