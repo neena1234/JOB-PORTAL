@@ -24,7 +24,13 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         {{#if admin}}
-            <a class="navbar-brand" href="">Job Portal | {{user.role}} | Dashboard</a>
+            <a class="navbar-brand" href="">Job Portal |  {{user.Name}} - {{user.role}} | Dashboard</a>
+        {{/if}}
+        {{#if employer}}
+            <a class="navbar-brand" href="">Job Portal | {{user.Name}} - {{user.role}} | Dashboard</a>
+        {{/if}}
+        {{#if applicant}}
+            <a class="navbar-brand" href="">Job Portal | {{user.Name}} | Dashboard</a>
         {{/if}}
         {{#if home}}
             <a class="navbar-brand" href="/">Job Portal</a>
@@ -33,9 +39,6 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 {{#if admin}}
-                    <li class="nav-item active">
-                        <a class="nav-link" href=""> {{user.Name}}</a>
-                    </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="/admin/view-stats">View Stats</a>
                     </li>
@@ -54,9 +57,6 @@
                 {{/if}}
                 {{#if employer}}
                     <li class="nav-item active">
-                        <a class="nav-link" href=""> {{user.Name}}</a>
-                    </li>
-                    <li class="nav-item active">
                         <a class="nav-link" href="">Profile</a>
                     </li>
                     <li class="nav-item active">
@@ -73,9 +73,6 @@
                     </li>
                 {{/if}}
                 {{#if applicant}}
-                    <li class="nav-item active">
-                        <a class="nav-link" href=""> {{user.Name}}</a>
-                    </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="">Profile</a>
                     </li>
