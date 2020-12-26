@@ -1,10 +1,34 @@
 <header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+            integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.js"
+            integrity="sha512-zO8oeHCxetPn1Hd9PdDleg5Tw1bAaP0YmNvPY8CwcRyUk7d7/+nyElmFrB6f7vg4f7Fv4sui1mcep8RIEShczg=="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"
+            integrity="sha512-SuxO9djzjML6b9w9/I07IWnLnQhgyYVSpHZx0JV97kGBfTIsUYlWflyuW4ypnvhBrslz1yJ3R+S14fdCWmSmSA=="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.css"
+          integrity="sha512-C7hOmCgGzihKXzyPU/z4nv97W0d9bv4ALuuEbSf6hm93myico9qa0hv4dODThvCsqQUmKmLcJmlpRmCaApr83g=="
+          crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"
+            integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw=="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css"
+          integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w=="
+          crossorigin="anonymous"/>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="/">Job Portal</a>
+        {{#if admin}}
+            <a class="navbar-brand" href="">Job Portal | {{user.role}} | Dashboard</a>
+        {{/if}}
+        {{#if home}}
+            <a class="navbar-brand" href="/">Job Portal</a>
+        {{/if}}
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -13,16 +37,16 @@
                         <a class="nav-link" href=""> {{user.Name}}</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="">Manage User</a>
+                        <a class="nav-link" href="/admin/view-stats">View Stats</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="">Manage Employers</a>
+                        <a class="nav-link" href="/admin/manage-users">Manage User</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="">Manage Job Posts</a>
+                        <a class="nav-link" href="/admin/manage-employers">Manage Employers</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="">{{user.role}} | Dashboard</a>
+                        <a class="nav-link" href="/admin/manage-jobs">Manage Job Posts</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="/logout">Logout</a>
@@ -69,21 +93,21 @@
                     </li>
                 {{/if}}
                 {{#if home}}
-                <li class="nav-item active">
-                    <a class="nav-link" href="services">Our Services</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="about">About US</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="contact">Contact US</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="jobs">All Jobs</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/login">Login</a>
-                </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="services">Our Services</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about">About US</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact">Contact US</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="jobs">All Jobs</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
                 {{/if}}
             </ul>
         </div>

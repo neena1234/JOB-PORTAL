@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b68e52f-cd1f-4685-859a-0f482bbde8f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/views/admin/view-stats.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/employers.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/employers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/admin-dashboard.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/admin-dashboard.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/all-jobs.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/all-jobs.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/view-all-employers.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/view-all-employers.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/view-all-users.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/view-all-users.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/partials/header.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +73,8 @@
       <workItem from="1608662827326" duration="265000" />
       <workItem from="1608888617287" duration="14000" />
       <workItem from="1608889499347" duration="701000" />
-      <workItem from="1608949268715" duration="1064000" />
+      <workItem from="1608949268715" duration="1431000" />
+      <workItem from="1608951140391" duration="4256000" />
     </task>
     <servers />
   </component>
