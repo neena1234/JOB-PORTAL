@@ -24,9 +24,9 @@ router.get('', function (req, res) {
     res.render('')
 });
 
-router.post('', ((req, res) => {
+router.post('/employers/add-job', ((req, res) => {
     jobHelper.addJobs(req.body, (result) => {
-        res.render('')
+        res.render('/employers/add-job')
     })
 }))
 

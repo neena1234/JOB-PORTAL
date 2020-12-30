@@ -1,52 +1,73 @@
-<section>
-    <div class="container mt-5">
-        <h1 class="text-center">ADMIN DASHBOARD</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
 
-        <div class="row mt-5">
-            <div class="col-md-6 p-1">
-                <div class="card">
-                    <h5 class="card-header">View Stats</h5>
-                    <div class="card-body">
-                        <h5 class="card-title">View the trends in among users</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="" class="btn btn-primary">View Stats</a>
-                    </div>
-                </div>
-            </div>
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
 
-            <div class="col-md-6 p-1">
-                <div class="card">
-                    <h5 class="card-header">Manage all posts</h5>
-                    <div class="card-body">
-                        <h5 class="card-title">Take the contol on the jobs</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Manage - Posts</a>
-                    </div>
-                </div>
-            </div>
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
 
-            <div class="col-md-6 p-1">
-                <div class="card">
-                    <h5 class="card-header">Manage all users</h5>
-                    <div class="card-body">
-                        <h5 class="card-title">Take the control of all the users</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="" class="btn btn-primary">Manage - Users</a>
-                    </div>
-                </div>
-            </div>
+.sidenav a:hover {
+  color: #f1f1f1;
+}
 
-            <div class="col-md-6 p-1">
-                <div class="card">
-                    <h5 class="card-header">Manage employers</h5>
-                    <div class="card-body">
-                        <h5 class="card-title">Take the control of all the employers</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="" class="btn btn-primary">Manage - Employers</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 
-    </div>
-</section>
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 
