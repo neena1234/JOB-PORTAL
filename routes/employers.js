@@ -8,9 +8,10 @@ var jobHelper = require('../helpers/job-helpers');
 var MongoClient = require('mongodb').MongoClient
 
 /* GET user listing. */
-router.get('/', function (req, res, next) {
+router.get('/all-jobs', function (req, res, next) {
+    let user = req.session.user
     jobHelper.getAllJobs().then((jobs) => {
-        res.render('', {jobs: jobs, admin: true})
+        res.render('employers/view-jobs', {jobs: jobs,user, admin:false,employer:true,applicant:false,home:false})
     })
 });
 
@@ -19,14 +20,14 @@ router.get('/employers-dashboard',function (req,res){
     res.render('employers/employers-dashboard',{user,admin:false,employer:true,applicant:false,home:false})
 })
 
+router.get('/add-job',function (req,res){
+    let user = req.session.user
+    res.render('employers/add-job',{user,admin:false,employer:true,applicant:false,home:false})
+})
 
-router.get('', function (req, res) {
-    res.render('')
-});
-
-router.post('/employers/add-job', ((req, res) => {
+router.post('/add-job', ((req, res) => {
     jobHelper.addJobs(req.body, (result) => {
-        res.render('/employers/add-job')
+        res.redirect('/employers/all-jobs')
     })
 }))
 
