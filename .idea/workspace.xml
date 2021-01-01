@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6b68e52f-cd1f-4685-859a-0f482bbde8f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home/about.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home/about.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home/all-jobs.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home/all-jobs.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home/contact.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home/contact.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home/services.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home/services.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/partials/header.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +68,9 @@
       <workItem from="1608888617287" duration="14000" />
       <workItem from="1608889499347" duration="701000" />
       <workItem from="1608949268715" duration="1431000" />
-      <workItem from="1608951140391" duration="6035000" />
+      <workItem from="1608951140391" duration="6924000" />
+      <workItem from="1609179741731" duration="168000" />
+      <workItem from="1609493897185" duration="545000" />
     </task>
     <servers />
   </component>

@@ -26,13 +26,13 @@ router.get('/login', (req, res) => {
         console.log(req.session.user)
         res.redirect('/')
     } else {
-        res.render('home/login', {"loginErr": req.session.loginErr})
+        res.render('home/login', {"loginErr": req.session.loginErr,admin:false,employer:false,applicant:false,home:true})
         req.session.loginErr = false
     }
 })
 
 router.get('/signup', (req, res) => {
-    res.render('home/signup')
+    res.render('home/signup',{admin:false,employer:false,applicant:false,home:true})
 })
 
 router.post('/signup', (req, res) => {
