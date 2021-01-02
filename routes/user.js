@@ -10,10 +10,10 @@ router.get('/', function (req, res, next) {
     res.render('user/user-dashboard',{user,admin:false,employer:false,applicant:true,home:false})
 });
 
-router.get('/user-view-jobs',function (req,res){
+router.get('/user/view-jobs',function (req,res){
     let user = req.session.user
     jobHelper.getAllJobs().then((jobs) => {
-        res.render('user/view-jobs', {jobs: jobs, user})
+        res.render('/user/view-jobs', {jobs: jobs, user})
     })
 })
 
